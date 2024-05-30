@@ -42,7 +42,7 @@ public class ALogin_QAdev extends initialiazeChrome {
 	
 	
 	public String getExcelData(String Sheetname, int row, int cell) throws InterruptedException, EncryptedDocumentException, IOException {
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		FileInputStream fis = new FileInputStream("C:\\Users\\L\\eclipse-workspace\\new-Jenkins-main\\new-Jenkins-main\\src\\main\\resources\\login.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
 		String Data = wb.getSheet(Sheetname).getRow(row).getCell(cell).getStringCellValue();
@@ -51,7 +51,7 @@ public class ALogin_QAdev extends initialiazeChrome {
 	//Actions
 	
 	public void loginWithValid(String USERNAME, String password) throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		email.sendKeys(USERNAME);	
 		pwd.sendKeys(password);
 		System.out.println(USERNAME);
