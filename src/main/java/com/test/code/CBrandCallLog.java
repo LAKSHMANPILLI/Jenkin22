@@ -38,7 +38,7 @@ public class CBrandCallLog extends initialiazeChrome {
 	private WebElement monthselect;
 	@FindBy(xpath = "//li[text()='2024']")
 	private WebElement yearSelect;
-	@FindBy(xpath = "(//button[@class='v-btn v-btn--text v-btn--rounded theme--light'])[1]")
+	@FindBy(xpath = "(//button[contains(@class,'v-btn v-date-picker-table__current v-btn--rounded v-btn--outlined theme--')])[1]")
 	private WebElement dateClick;
 		
 	
